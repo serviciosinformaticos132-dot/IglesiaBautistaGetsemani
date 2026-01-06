@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Iglesia Bautista</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
@@ -15,8 +15,8 @@
             <li><button onclick="mostrarSeccion('somos')">Somos</button></li>
 
             <li class="dropdown">
-                <button>Recursos ▾</button>
-                <ul class="submenu">
+                <button onclick="toggleRecursos()">Recursos ▾</button>
+                <ul class="submenu" id="submenuRecursos">
                     <li><button onclick="mostrarSeccion('predicas')">Prédicas</button></li>
                     <li><button onclick="mostrarSeccion('sermones')">Sermones</button></li>
                     <li><button onclick="mostrarSeccion('discipulados')">Discipulados</button></li>
@@ -76,6 +76,6 @@
     <p>© <span id="year"></span> Iglesia Cristiana Bautista. Todos los derechos reservados.</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
