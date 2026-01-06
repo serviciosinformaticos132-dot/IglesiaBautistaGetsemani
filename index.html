@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iglesia Bautista</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="menu">
+        <div class="logo">Iglesia Bautista</div>
+        <ul>
+            <li><button onclick="mostrarSeccion('inicio')">Inicio</button></li>
+            <li><button onclick="mostrarSeccion('somos')">Somos</button></li>
+
+            <li class="dropdown">
+                <button>Recursos ▾</button>
+                <ul class="submenu">
+                    <li><button onclick="mostrarSeccion('predicas')">Prédicas</button></li>
+                    <li><button onclick="mostrarSeccion('sermones')">Sermones</button></li>
+                    <li><button onclick="mostrarSeccion('discipulados')">Discipulados</button></li>
+                    <li><button onclick="mostrarSeccion('ninos')">Niños</button></li>
+                </ul>
+            </li>
+
+            <li><button onclick="mostrarSeccion('contacto')">Contacto</button></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="inicio" class="seccion activa">
+        <h1>Bienvenidos</h1>
+        <p>Una iglesia cristiana bautista centrada en Cristo y Su Palabra.</p>
+    </section>
+
+    <section id="somos" class="seccion">
+        <h1>¿Quiénes Somos?</h1>
+        <p>Somos una iglesia bautista comprometida con la sana doctrina, la enseñanza bíblica y el amor cristiano.</p>
+    </section>
+
+    <section id="predicas" class="seccion">
+        <h1>Prédicas</h1>
+        <p>Mensajes edificantes basados en la Palabra de Dios.</p>
+    </section>
+
+    <section id="sermones" class="seccion">
+        <h1>Sermones</h1>
+        <p>Serie de enseñanzas doctrinales y expositivas.</p>
+    </section>
+
+    <section id="discipulados" class="seccion">
+        <h1>Discipulados</h1>
+        <p>Materiales para el crecimiento espiritual.</p>
+    </section>
+
+    <section id="ninos" class="seccion">
+        <h1>Ministerio de Niños</h1>
+        <p>Enseñando la Palabra de Dios a los más pequeños.</p>
+    </section>
+
+    <section id="contacto" class="seccion">
+        <h1>Contacto</h1>
+        <p>Síguenos y contáctanos:</p>
+
+        <div class="redes">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">YouTube</a>
+            <a href="https://wa.me/5210000000000" target="_blank">WhatsApp</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© <span id="year"></span> Iglesia Cristiana Bautista. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
